@@ -22,10 +22,11 @@ for elem in tqdm(input_arr):
         highest = max(num, highest)
         counter += 1
 
-    # print(f"Starting Number: {elem}")
-    # print(f"Highest peak: {highest}")
-    # print(f"Numbers gone through: {counter+1}")
-    # print()
+    if num_range <= 100:
+        print(f"Starting Number: {elem}")
+        print(f"Highest peak: {highest}")
+        print(f"Numbers gone through: {counter+1}")
+        print()
 
     if highest >= overall_max[1]:
         overall_max = (elem, highest)
