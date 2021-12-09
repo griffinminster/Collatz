@@ -39,11 +39,11 @@ for elem in tqdm(input_arr):
         curr_y.append(num)
 
     #Prints results for each number, only if inital number was 100 or less
-    # if num_range <= 100:
-    #     print(f"Starting Number: {elem}")
-    #     print(f"Highest peak: {highest}")
-    #     print(f"Numbers gone through: {COUNTER+1}")
-    #     print()
+    if num_range <= 100:
+        print(f"Starting Number: {elem}")
+        print(f"Highest peak: {highest}")
+        print(f"Numbers gone through: {COUNTER+1}")
+        print()
 
     #Figure out overall results for max number reached and most numbers gone through each loop pass
     if highest >= overall_max[1]:
