@@ -7,7 +7,7 @@ locale.setlocale(locale.LC_ALL, '')
 
 #Parse inputs
 num_range = int(input("What number do you want to test up to? "))
-input_arr = [x for x in range(1, num_range+1)]
+input_arr = list(range(1, num_range+1))
 
 overall_max = (-1, -1)
 overall_tst = (-1, -1)
@@ -23,8 +23,8 @@ for elem in tqdm(input_arr):
     num = elem
     highest = elem
     COUNTER = 0
-    curr_x = []
-    curr_y = []
+    curr_x = [COUNTER]
+    curr_y = [num]
 
     #Performs main 3n+1 or n/2 computation until 1 is reached, ending the loop
     while num != 1:
